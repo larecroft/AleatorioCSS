@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Falando em div</title>
+    <meta name="author" content="Larissa Fortunato">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <style>
+        body{background-color: #8881c598;}
+        h1{text-align: center; font-size: 2em;}
+        div{
+         width: 10em; 
+          height: 10em; 
+          margin: 5em; 
+          background-color: aqua;
+          display: inline-block;
+        }
+        /* -------------------------------------- */
+        #divtitle{
+          width: 40em ;
+          transform: skew(-20deg, -20deg);
+        }
+        #div1{  
+           background-color: #967AF0;
+           width: 26em; height: 26em; 
+           transform: translateX(20em) rotate(45deg) ;
+        }
+        #div3{width:20em ;} 
+        #div4{transform: skew(-80deg, 50deg);}
+        #div4{transform: skew(-80deg, 50deg);}
+        #div5{background-color: #866ED6; height: 20em;}
+        #div6{background-color:#463970; transform: skew(30deg,30deg); height: 30em;}
+        #div7{border-radius: 50em; width: 50em; transform: translateY(-10em) skew(60deg,560deg);background-color: #866ED6;}
+        #div8{ transform: skew(80deg);}
+        #div9{border-radius: 10em; height: 80em;  transform: skewX(-20deg) translateX(10em);}
+        #div10{ width: 30em; height: 30em; background-color: #866ED6; transform: skew(60deg,560deg);}
+        #div11{width: 50em; border-radius: 50em; background-color: #866ED6;}
+    </style>
+    
+</head>
+<body>
+    <div id="divtitle"><h1>nada faz sentido</h1></div>
+    
+    <div id="div1"><div id="div2"></div></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9">
+        <div id="div10"></div>
+        <div id="div11"></div>
+    </div>
+    
+</body>
+</html>
