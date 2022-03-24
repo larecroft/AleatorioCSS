@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tabelinhaz</title>
+    <meta name="author" content="Larissa Fortunato">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .Tfund table{
+            border: 1px solid black;
+            margin: 1em;
+            display: inline-block;      
+        }
+        .Tbasic table{display: inline-block; margin: 3%;}
+        .Tbasic th, .Tbasic td{padding: 10px; font-size: 1.5em;}
+
+        .Tbasic1{ background-color: black;}
+        .Tbasic1 tr{ background-color:azure}
+        
+        .Tbasic2{ border-collapse: collapse; }
+        .Tbasic2 td{border: 1px solid black; }
+        .Tbasic2 tfoot {text-align: center;}
+
+        .Tbasic3{ border-collapse: collapse; }
+        .Tbasic3 tbody, .Tbasic3 thead{border: 1px solid black; }
+        .Tbasic3 tfoot {text-align: center;}
+        /* ------------- */
+        .Tinterm{margin: 2%; display: flex;}
+        .Tinterm td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .Tinterm table {
+            border-collapse: collapse; /* grudar as divisórias das linhas e coluna deixando como se fosse uma coisa só */
+            width: 40%; 
+            margin: 1%;
+        }
+        .Tinterm th{
+            text-transform: uppercase;
+            padding: 15px;
+            border: 2px solid black;
+        }
+        .Tinterm2 tbody tr:nth-child(1){background-color:lavender;}
+        .Tinterm2 tr:nth-child(3){background-color:lavender;}
+        .Tinterm2 tr:nth-child(5){background-color:lavender;}
+        .Tinterm2 tr:nth-child(7){background-color:lavender;}
+        /* ------ */
+        .Tadc table{ border-collapse: collapse; width: 40%;font-size: 2em; text-align: center; display: inline-block;}
+        .Tadc td{padding: 5px 25px;}
+        .Tadc1 tbody tr:nth-child(1){background-color:#ddd;}
+        .Tadc1 tr:nth-child(3){background-color:#ddd;}
+        .Tadc1 tr:nth-child(5){background-color:#ddd;}
+        .Tadc1 tr:nth-child(7){background-color:#ddd;}
+
+        
+        .Tadc2 tbody td:nth-child(odd) {
+	    background-color:#97bbe4;
+	    }
+	    .Tadc2 td:nth-child(even) {
+	    background-color:#be9fdb;
+	    }
+        /* ------------------ */
+        .Tavc table{margin: 2%;display: inline-block;}
+        
+        .Tavc2 table,.Tavc2 tr,.Tavc2 td {
+        width: 20px;
+        height: 20px;
+        border: solid #000 1px;
+        }
+        .Tavc2 tr:nth-child(odd) td:nth-child(even) {background: #be9fdb;}
+        .Tavc2 tr:nth-child(even) td:nth-child(odd) {background: #be9fdb;}
+        
+    </style>
+</head>
+<body>
+    <section class="Tfund">
+        <table>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+            </tr>
+        </table>
+    
+        <table>
+            <tr>
+                <th>Titulo1</th>
+                <th>Titulo2</th>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <th>Titulo1</th>
+                <th>Titulo2</th>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+            </tr>
+            <tr>
+                <td colspan="3">rodapé-rodapé-rodapé-rodapé-rodapé-rodapé</td>
+            </tr>
+        </table>
+
+    </section>
+    
+    <section class="Tbasic">
+        <table class="Tbasic1">
+            <thead>
+            <tr>
+                <th>Titulo1</th>
+                <th>Titulo2</th>
+                <th>Titulo3</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td>foot1</td>
+                <td>foot2</td>
+                <td>foot3</td>
+            </tfoot>
+        </table>
+        <table class="Tbasic2">
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="3">foot unico</td>
+            </tfoot>
+        </table>
+        <table class="Tbasic3">
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="3">foot unico</td>
+            </tfoot>
+        </table>
+    </section>
+    <section class="Tinterm">
+        <table class="Tinterm1">
+            <caption>Tabela exemplo1</caption>
+    
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                </tr>
+            </thead>
+            
+    
+            <tbody>
+                <tr>    
+                    <td rowspan="3">Categoria1</td>
+                    <td>item1.0</td>
+                    <td>item1.1</td>
+                </tr>
+                <tr>    
+                    <td>item2.0</td>
+                    <td>item2.1</td>
+                </tr>
+                <tr>    
+                    <td>item3.0</td>
+                    <td>item3.1</td>
+                </tr>
+                <tr>    
+                    <td rowspan="4">Categoria2</td>
+                    <td>item1.0</td>
+                    <td>item1.1</td>
+                </tr>
+                <tr>    
+                    <td>item2.0</td>
+                    <td>item2.1</td>
+                </tr>
+                <tr>    
+                    <td>item3.0</td>
+                    <td>item3.1</td>
+                </tr>
+                <tr>    
+                    <td>item4.0</td>
+                    <td>item4.1</td>
+                </tr>
+    
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Categoria3</td>
+                    <td colspan="2">foot-foot-foot-foot-foot-foot</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <table class="Tinterm2">
+            <caption>Tabela exemplo2 (listrada)</caption>
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">foot-foot-foot-foot-foot-foot</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section class="Tadc">
+        <table class="Tadc1">
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">foot-foot-foot-foot-foot-foot</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table class="Tadc2">
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                    <th>Titulo4</th>
+                    <th>Titulo5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                    <td>item5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">foot-foot-foot-foot-foot</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section class="Tavc">
+
+        <table class="Tavc1">
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                    <th>Titulo4</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                   
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>&nbsp;</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                   
+                </tr>
+                <tr>    
+                    <td>&nbsp;</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                   
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>&nbsp;</td>
+                  
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                   
+                </tr>
+                <tr>    
+                    <td>&nbsp;</td>
+                    <td>item2</td>
+                    <td>&nbsp;</td>
+                    <td>item4</td>
+                   
+                </tr>
+                <tr>    
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                    <td>item4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="Tavc2">
+            <thead>
+                <th colspan="4">Titulo1</th>
+                <th colspan="4">Titulo2</th>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+    </section>
+</body>
+</html>
